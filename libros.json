@@ -1,0 +1,63 @@
+[
+    {
+      "Nombre": "Cien años de soledad",
+      "Autor": "Gabriel García Márquez",
+      "Año de Publicación": 1967,
+      "Género": "Novela"
+    },
+    {
+      "Nombre": "Don Quijote de la Mancha",
+      "Autor": "Miguel de Cervantes",
+      "Año de Publicación": 1605,
+      "Género": "Clásico"
+    },
+    {
+      "Nombre": "El amor en los tiempos del cólera",
+      "Autor": "Gabriel García Márquez",
+      "Año de Publicación": 1985,
+      "Género": "Romance"
+    },
+    {
+      "Nombre": "La sombra del viento",
+      "Autor": "Carlos Ruiz Zafón",
+      "Año de Publicación": 2001,
+      "Género": "Misterio"
+    },
+    {
+      "Nombre": "Crónica de una muerte anunciada",
+      "Autor": "Gabriel García Márquez",
+      "Año de Publicación": 1981,
+      "Género": "Crimen"
+    },
+    {
+      "Nombre": "Los pilares de la tierra",
+      "Autor": "Ken Follett",
+      "Año de Publicación": 1989,
+      "Género": "Histórico"
+    },
+    {
+      "Nombre": "El principito",
+      "Autor": "Antoine de Saint-Exupery",
+      "Año de Publicación": 1943,
+      "Género": "Fábula"
+    },
+    {
+      "Nombre": "1984",
+      "Autor": "George Orwell",
+      "Año de Publicación": 1949,
+      "Género": "Distopía"
+    },
+    {
+      "Nombre": "El nombre de la rosa",
+      "Autor": "Umberto Eco",
+      "Año de Publicación": 1980,
+      "Género": "Misterio Histórico"
+    },
+    {
+      "Nombre": "Rayuela",
+      "Autor": "Julio Cortázar",
+      "Año de Publicación": 1963,
+      "Género": "Novela"
+    }
+  ]
+  

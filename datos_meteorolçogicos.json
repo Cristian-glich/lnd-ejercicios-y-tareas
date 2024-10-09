@@ -1,0 +1,72 @@
+[
+    {
+        "Ciudad": "Madrid",
+        "Temperatura (°C)": 22,
+        "Humedad (%)": 45,
+        "Viento (km/h)": 15,
+        "Estado del Tiempo": "Soleado"
+    },
+    {
+        "Ciudad": "Barcelona",
+        "Temperatura (°C)": 20,
+        "Humedad (%)": 60,
+        "Viento (km/h)": 10,
+        "Estado del Tiempo": "Parcialmente nublado"
+    },
+    {
+        "Ciudad": "Sevilla",
+        "Temperatura (°C)": 28,
+        "Humedad (%)": 35,
+        "Viento (km/h)": 20,
+        "Estado del Tiempo": "Soleado"
+    },
+    {
+        "Ciudad": "Valencia",
+        "Temperatura (°C)": 24,
+        "Humedad (%)": 50,
+        "Viento (km/h)": 12,
+        "Estado del Tiempo": "Nublado"
+    },
+    {
+        "Ciudad": "Bilbao",
+        "Temperatura (°C)": 18,
+        "Humedad (%)": 70,
+        "Viento (km/h)": 8,
+        "Estado del Tiempo": "Lluvia ligera"
+    },
+    {
+        "Ciudad": "Málaga",
+        "Temperatura (°C)": 26,
+        "Humedad (%)": 55,
+        "Viento (km/h)": 18,
+        "Estado del Tiempo": "Soleado"
+    },
+    {
+        "Ciudad": "Zaragoza",
+        "Temperatura (°C)": 21,
+        "Humedad (%)": 40,
+        "Viento (km/h)": 14,
+        "Estado del Tiempo": "Soleado"
+    },
+    {
+        "Ciudad": "La Coruña",
+        "Temperatura (°C)": 17,
+        "Humedad (%)": 75,
+        "Viento (km/h)": 10,
+        "Estado del Tiempo": "Lluvia moderada"
+    },
+    {
+        "Ciudad": "Tenerife",
+        "Temperatura (°C)": 25,
+        "Humedad (%)": 65,
+        "Viento (km/h)": 22,
+        "Estado del Tiempo": "Soleado"
+    },
+    {
+        "Ciudad": "Palma de Mallorca",
+        "Temperatura (°C)": 23,
+        "Humedad (%)": 55,
+        "Viento (km/h)": 16,
+        "Estado del Tiempo": "Parcialmente nublado"
+    }
+]
