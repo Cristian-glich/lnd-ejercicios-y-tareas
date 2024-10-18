@@ -1,0 +1,3 @@
+Ejercicio 2
+
+Aquellos que no se pueden codificar en el ASCII son "¡" y la "é"
