@@ -1,0 +1,17 @@
+<!ELEMENT personas (persona+)>
+<!-- Usamos "+" en persona porque se espera que haya al menos una persona en la lista. -->
+
+<!ELEMENT persona (nombre, apellidos, telefono, email, direccion)>
+<!ATTLIST persona 
+    id ID #REQUIRED>
+<!-- El atributo id es #REQUIRED y de tipo ID para garantizar que cada persona tenga un identificador único. -->
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+
+<!ELEMENT direccion (via, nombre_via, numero)>
+<!ELEMENT via (#PCDATA)>
+<!ELEMENT nombre_via (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>

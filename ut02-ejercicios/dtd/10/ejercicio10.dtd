@@ -1,0 +1,44 @@
+<!ELEMENT factura (informacion, cliente, proveedor, productos, resumen)>
+<!-- La factura contiene la información general, datos del cliente, proveedor, una lista de productos, y un resumen con el cálculo total. -->
+
+<!ELEMENT informacion (fecha_factura, numero_factura, fecha_vencimiento)>
+<!-- La sección de información incluye la fecha de la factura, el número de la factura, y la fecha de vencimiento. -->
+
+<!ELEMENT fecha_factura (#PCDATA)>
+<!ELEMENT numero_factura (#PCDATA)>
+<!ELEMENT fecha_vencimiento (#PCDATA)>
+
+<!ELEMENT cliente (nombre, direccion, nif, contacto)>
+<!ELEMENT proveedor (nombre, direccion, cif, contacto)>
+<!-- Las secciones de cliente y proveedor contienen los mismos elementos básicos de información. -->
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT direccion (calle, cp_ciudad)>
+<!ELEMENT nif (#PCDATA)>
+<!ELEMENT cif (#PCDATA)>
+<!ELEMENT contacto (email?)>
+<!-- El email se define como opcional con "?" porque en algunos casos puede no estar presente. -->
+
+<!ELEMENT calle (#PCDATA)>
+<!ELEMENT cp_ciudad (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+
+<!ELEMENT productos (producto+)>
+<!-- Usamos "+" en producto para indicar que debe haber al menos un producto en la factura. -->
+
+<!ELEMENT producto (descripcion, unidades, precio_unitario, precio_total)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT unidades (#PCDATA)>
+<!ELEMENT precio_unitario (#PCDATA)>
+<!ELEMENT precio_total (#PCDATA)>
+
+<!ELEMENT resumen (base_imponible, iva, irpf, total)>
+<!-- La sección de resumen contiene los detalles de la base imponible, el IVA, el IRPF, y el total final. -->
+
+<!ELEMENT base_imponible (#PCDATA)>
+<!ELEMENT iva (#PCDATA)>
+<!ELEMENT irpf (#PCDATA)>
+<!ELEMENT total (#PCDATA)>
+
+<!ELEMENT comentarios (#PCDATA)>
+<!-- La sección de comentarios es opcional, así que no se incluye dentro de la estructura de factura como obligatorio. -->

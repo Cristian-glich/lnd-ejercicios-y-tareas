@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<maquinasVirtuales>
+    <maquina id="1">
+        <nombre>ServidorWeb</nombre>
+        <cpu>4</cpu>
+        <ram unidad="MB">8192</ram>
+        <disco tipo="vdi">/home/usuario/VirtualBox VMs/ServidorWeb/ServidorWeb.vdi</disco>
+        <tamanoDisco unidad="GB">100</tamanoDisco>
+        <adaptadorRed modo="NAT">
+            <reglasReenvio>
+                <regla>
+                    <nombre>HTTP</nombre>
+                    <puertoAnfitrion>8080</puertoAnfitrion>
+                    <puertoInvitado>80</puertoInvitado>
+                </regla>
+                <regla>
+                    <nombre>SSH</nombre>
+                    <puertoAnfitrion>2222</puertoAnfitrion>
+                    <puertoInvitado>22</puertoInvitado>
+                </regla>
+            </reglasReenvio>
+        </adaptadorRed>
+    </maquina>
+    
+    <maquina id="2">
+        <nombre>ServidorBD</nombre>
+        <cpu>2</cpu>
+        <ram unidad="MB">4096</ram>
+        <disco tipo="vmdk">/home/usuario/VirtualBox VMs/ServidorBD/ServidorBD.vmdk</disco>
+        <tamanoDisco unidad="GB">50</tamanoDisco>
+        <adaptadorRed modo="puente"/>
+    </maquina>
+    
+    <maquina id="3">
+        <nombre>ServidorPruebas</nombre>
+        <cpu>1</cpu>
+        <ram unidad="MB">2048</ram>
+        <disco tipo="vdi">/home/usuario/VirtualBox VMs/ServidorPruebas/ServidorPruebas.vdi</disco>
+        <tamanoDisco unidad="GB">20</tamanoDisco>
+        <adaptadorRed modo="NAT">
+            <reglasReenvio>
+                <regla>
+                    <nombre>HTTP</nombre>
+                    <puertoAnfitrion>8081</puertoAnfitrion>
+                    <puertoInvitado>80</puertoInvitado>
+                </regla>
+            </reglasReenvio>
+        </adaptadorRed>
+    </maquina>
+</maquinasVirtuales>

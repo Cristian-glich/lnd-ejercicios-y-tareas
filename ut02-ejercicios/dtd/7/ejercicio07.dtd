@@ -1,0 +1,20 @@
+<!ELEMENT filmoteca (pelicula+)>
+<!-- Usamos "+" en pelicula porque esperamos que haya al menos una película en la filmoteca. -->
+
+<!ELEMENT pelicula (titulo, director, año, duracion, genero)>
+<!ATTLIST pelicula 
+    id ID #REQUIRED
+    calificacion (G | PG | PG-13 | R) #REQUIRED>
+<!-- El atributo id es #REQUIRED y de tipo ID para que cada película tenga un identificador único. -->
+<!-- El atributo calificacion es #REQUIRED porque cada película necesita una calificación, y hemos definido las opciones posibles (G, PG, PG-13, R). -->
+
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT director (#PCDATA)>
+<!ELEMENT año (#PCDATA)>
+
+<!ELEMENT duracion (#PCDATA)>
+<!ATTLIST duracion 
+    unidad CDATA #REQUIRED>
+<!-- El atributo unidad en duracion es #REQUIRED para especificar la unidad de tiempo (minutos). -->
+
+<!ELEMENT genero (#PCDATA)>

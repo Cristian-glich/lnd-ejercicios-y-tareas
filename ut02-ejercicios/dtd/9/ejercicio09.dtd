@@ -1,0 +1,41 @@
+<!ELEMENT maquinas_virtuales (maquina+)>
+<!-- Usamos "+" en maquina porque se espera que haya al menos una máquina virtual configurada. -->
+
+<!ELEMENT maquina (nombre, cpu, ram, disco, adaptador_red)>
+<!ATTLIST maquina 
+    id ID #REQUIRED>
+<!-- El atributo id es #REQUIRED y de tipo ID para asegurar que cada máquina virtual tenga un identificador único. -->
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT cpu (#PCDATA)>
+<!-- cpu representa el número de núcleos y se define como texto simple (#PCDATA). -->
+
+<!ELEMENT ram (#PCDATA)>
+<!ATTLIST ram 
+    unidad CDATA #REQUIRED>
+<!-- El atributo unidad en ram es #REQUIRED para especificar la unidad de almacenamiento en MB, tal como se indica en las instrucciones. -->
+
+<!ELEMENT disco (ruta, tamano_disco)>
+<!ATTLIST disco 
+    tipo (vdi | vmdk) #REQUIRED>
+<!-- El atributo tipo en disco es #REQUIRED porque necesitamos saber si el disco es de tipo vdi o vmdk. -->
+
+<!ELEMENT ruta (#PCDATA)>
+<!-- ruta contiene la ruta absoluta al archivo de disco duro y se define como texto simple (#PCDATA). -->
+
+<!ELEMENT tamano_disco (#PCDATA)>
+<!ATTLIST tamano_disco 
+    unidad CDATA #REQUIRED>
+<!-- El atributo unidad en tamano_disco es #REQUIRED para especificar que el tamaño del disco está en GB. -->
+
+<!ELEMENT adaptador_red (regla_reenvio*)>
+<!ATTLIST adaptador_red 
+    modo (NAT | puente) #REQUIRED>
+<!-- El atributo modo en adaptador_red es #REQUIRED para definir si el adaptador está en modo NAT o puente. -->
+<!-- Usamos "*" en regla_reenvio porque las reglas de reenvío son opcionales y pueden aparecer 0 o más veces solo si el adaptador está en modo NAT. -->
+
+<!ELEMENT regla_reenvio (puerto_hospedador, puerto_maquina)>
+<!-- Usamos este elemento para definir las reglas de reenvío de puertos solo si el adaptador está en modo NAT. -->
+
+<!ELEMENT puerto_hospedador (#PCDATA)>
+<!ELEMENT puerto_maquina (#PCDATA)>

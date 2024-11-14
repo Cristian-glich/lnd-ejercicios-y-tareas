@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Elemento raíz con un máximo de 10 estudiantes permitidos en el listado -->
+    <xs:element name="estudiantes">
+        <xs:complexType>
+            <xs:sequence maxOccurs="10">
+                <xs:element name="estudiante" type="EstudianteType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Tipo complejo para cada estudiante -->
+    <xs:complexType name="EstudianteType">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="apellidos" type="xs:string"/>
+            <xs:element name="matricula" type="MatriculaType"/>
+            <xs:element name="fecha_inscripcion" type="FechaInscripcionType"/>
+            <xs:element name="correo" type="CorreoType"/>
+            <xs:element name="telefonos">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="telefono" type="TelefonoType" minOccurs="1" maxOccurs="3"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="direccion" type="DireccionType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Definición de los tipos personalizados -->
+    
+    <!-- Matrícula: un número de exactamente 7 dígitos -->
+    <xs:simpleType name="MatriculaType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{7}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Fecha de inscripción: entre 2000-01-01 y 2023-12-31 -->
+    <xs:simpleType name="FechaInscripcionType">
+        <xs:restriction base="xs:date">
+            <xs:minInclusive value="2000-01-01"/>
+            <xs:maxInclusive value="2023-12-31"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Correo electrónico con formato específico -->
+    <xs:simpleType name="CorreoType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Teléfono: exactamente 10 dígitos -->
+    <xs:simpleType name="TelefonoType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{10}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Dirección: con elementos específicos y restricciones -->
+    <xs:complexType name="DireccionType">
+        <xs:sequence>
+            <xs:element name="via" type="ViaType"/>
+            <xs:element name="nombre_via" type="xs:string"/>
+            <xs:element name="codigo_postal" type="CodigoPostalType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Tipo de vía: solo permite "calle" o "avenida" -->
+    <xs:simpleType name="ViaType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="calle"/>
+            <xs:enumeration value="avenida"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Código postal: exactamente 5 dígitos -->
+    <xs:simpleType name="CodigoPostalType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{5}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

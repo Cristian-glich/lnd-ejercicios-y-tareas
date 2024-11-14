@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<factura>
+    <informacionFactura>
+        <fechaEmision>2024-04-17</fechaEmision>
+        <numeroFactura>2024-0001</numeroFactura>
+        <fechaVencimiento>2024-05-17</fechaVencimiento>
+    </informacionFactura>
+
+    <emisor>
+        <nombre>Orlando Juan Lobán</nombre>
+        <direccion>Avenida Rosario 2, 1 A</direccion>
+        <nif>39000001A</nif>
+        <cpCiudad>08001, Barcelona</cpCiudad>
+        <email>info@orlandojuan.es</email>
+    </emisor>
+
+    <receptor>
+        <nombre>Empresa de logística, S.L.</nombre>
+        <direccion>Calle San Juan de la Luz, s/n</direccion>
+        <cif>B12345678</cif>
+        <cpCiudad>28001, Madrid</cpCiudad>
+        <email>info@empresalogisticasl.com</email>
+    </receptor>
+
+    <productos>
+        <producto>
+            <descripcion>Producto 1</descripcion>
+            <unidades>2</unidades>
+            <precioUnitario>100.00</precioUnitario>
+            <precioTotal>200.00</precioTotal>
+        </producto>
+        <producto>
+            <descripcion>Producto 2</descripcion>
+            <unidades>4</unidades>
+            <precioUnitario>150.00</precioUnitario>
+            <precioTotal>600.00</precioTotal>
+        </producto>
+        <producto>
+            <descripcion>Producto 3</descripcion>
+            <unidades>7</unidades>
+            <precioUnitario>93.00</precioUnitario>
+            <precioTotal>651.00</precioTotal>
+        </producto>
+    </productos>
+
+    <resumen>
+        <baseImponible>1451.00</baseImponible>
+        <iva porcentaje="21">304.71</iva>
+        <irpf porcentaje="-15">-217.65</irpf>
+        <total>1538.06</total>
+    </resumen>
+
+    <comentarios>Pago por transferencia: ESXXXXXXXXXXXXXXXXXX9</comentarios>
+</factura>

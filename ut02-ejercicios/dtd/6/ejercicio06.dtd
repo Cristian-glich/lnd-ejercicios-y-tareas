@@ -1,0 +1,12 @@
+<!ELEMENT libreria (libro+)>
+<!-- Usamos "+" en libro porque debe haber al menos un libro en la librería. -->
+
+<!ELEMENT libro (titulo, autor, año, precio)>
+<!ATTLIST libro 
+    moneda CDATA #REQUIRED>
+<!-- El atributo moneda es #REQUIRED para que cada libro especifique la divisa de su precio. -->
+
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT año (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
