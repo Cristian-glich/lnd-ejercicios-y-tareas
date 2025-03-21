@@ -1,4 +1,5 @@
 Pregunta 1
+
 <titles>
   <title>Thriller</title>
   <title>The Dark Side of the Moon</title>
@@ -8,6 +9,7 @@ Pregunta 1
 </titles>
 
 Pregunta 2
+
 <titles>
   <title>The Dark Side of the Moon</title>
   <title>Back in Black</title>
@@ -15,12 +17,15 @@ Pregunta 2
 </titles>
 
 Pregunta 3
+
 <price currency="USD">12.99</price>
 
 Pregunta 4
+
 <count>3</count>
 
 Pregunta 5
+
 <artists>
   <artist>Pink Floyd</artist>
   <artist>AC/DC</artist>
@@ -28,6 +33,7 @@ Pregunta 5
 </artists>
 
 Pregunta 6
+
 <album id="102">
   <title>The Dark Side of the Moon</title>
   <artist>Pink Floyd</artist>
@@ -37,14 +43,17 @@ Pregunta 6
 </album>
 
 Pregunta 7
+
 <genre>Pop</genre>
 
 Pregunta 8
+
 <ids>
   <id>104</id>
 </ids>
 
 Pregunta 9
+
 <albums>
   <album id="103">
     <title>Back in Black</title>
@@ -63,6 +72,7 @@ Pregunta 9
 </albums>
 
 Pregunta 10
+
 <genres>
   <genre>Pop</genre>
   <genre>Rock</genre>
