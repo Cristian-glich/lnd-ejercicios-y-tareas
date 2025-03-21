@@ -76,8 +76,13 @@ Pregunta 10
 
 <ids>
   <id>101</id>
+  
   <id>102</id>
+  
   <id>103</id>
+  
   <id>104</id>
+  
   <id>105</id>
+
 </ids>
