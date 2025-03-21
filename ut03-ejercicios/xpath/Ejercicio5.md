@@ -1,11 +1,13 @@
 Pregunta 1
 
 <names>
+
   <name>Chair</name>
   <name>Table</name>
   <name>Lamp</name>
   <name>Desk</name>
   <name>Ceiling Light</name>
+
 </names>
 
 Pregunta 2
@@ -42,34 +44,42 @@ Pregunta 4
 Pregunta 5
 
 <product id="P004">
+
   <name>Desk</name>
   <category>Furniture</category>
   <price currency="USD">249.99</price>
   <stock>20</stock>
+
 </product>
 
 Pregunta 6
 
 <names>
+
   <name>Desk</name>
   <name>Ceiling Light</name>
+
 </names>
 
 Pregunta 7
 
 <prices>
+
   <price currency="USD">49.99</price>
   <price currency="USD">129.99</price>
   <price currency="USD">19.99</price>
   <price currency="USD">249.99</price>
   <price currency="USD">79.99</price>
+
 </prices>
 
 Pregunta 8
 
 <ids>
+
   <id>P003</id>
   <id>P005</id>
+
 </ids>
 
 Pregunta 9
@@ -83,20 +93,25 @@ Pregunta 10
     <name>Lamp</name>
     <price currency="USD">19.99</price>
   </product>
+
   <product>
     <name>Chair</name>
     <price currency="USD">49.99</price>
   </product>
+
   <product>
     <name>Ceiling Light</name>
     <price currency="USD">79.99</price>
   </product>
+
   <product>
     <name>Table</name>
     <price currency="USD">129.99</price>
   </product>
+
   <product>
     <name>Desk</name>
     <price currency="USD">249.99</price>
   </product>
+  
 </products>
