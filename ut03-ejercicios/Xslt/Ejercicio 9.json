@@ -1,0 +1,22 @@
+{
+    "Electronics": [
+      {
+        "name": "Laptop",
+        "price": 1000
+      },
+      {
+        "name": "Smartphone",
+        "price": 700
+      }
+    ],
+    "Books": [
+      {
+        "name": "1984",
+        "price": 15.99
+      },
+      {
+        "name": "Brave New World",
+        "price": 12.49
+      }
+    ]
+  }
