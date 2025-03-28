@@ -1,0 +1,26 @@
+body {padding-left: 12em;
+     background-color: #d8da3d;
+     color: purple;
+     font-family: Arial;}
+h1 {font-family: "Comic Sans MS";}
+ul {padding: 0;
+    width: 160px;
+    margin: 0;
+    position: fixed;
+    left: 50px;
+    top: 100px;}
+
+img {float: right;
+margin-right: 50px;
+width: 500px;
+ height: 500px;
+margin-left: -30em;
+Border: dotted Blue;}
+
+p {padding: 10px;
+    margin-right: 30em;
+color: black;
+background-color: plum;
+border: solid brown 5px;
+float: left;
+width: 1100px;}
