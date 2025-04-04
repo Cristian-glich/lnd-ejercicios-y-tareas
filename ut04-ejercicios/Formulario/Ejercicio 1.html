@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario 01</title>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form>
+        <!-- Radiobuttons -->
+        <p>Idiomas:</p>
+        <input type="radio" id="ingles" name="idioma" value="idiomaingles">
+        <label for="ingles">Inglés</label><br>
+        <input type="radio" id="aleman" name="idioma" value="idiomaaleman">
+        <label for="aleman">Alemán</label><br>
+        <input type="radio" id="frances" name="idioma" value="idiomafrances">
+        <label for="frances">Francés</label><br><br>
+
+        <!-- Lista desplegable -->
+        <label for="conector">Conector:</label>
+        <select name="conector" id="conector">
+            <option value="usb">USB</option>
+            <option value="paralelo">Paralelo</option>
+            <option value="ps2">PS2</option>
+        </select><br><br>
+
+        <!-- Cuadros de texto -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos"><br><br>
+
+        <!-- Lista desplegable múltiple -->
+        <label for="sexo">Sexo:</label>
+        <select name="sexo" id="sexo" multiple>
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+        </select><br><br>
+
+        <!-- Checkboxes -->
+        <p>Selecciona tu género:</p>
+        <input type="checkbox" id="sexomujer" name="sexo" value="sexomujer">
+        <label for="sexomujer">Mujer</label><br>
+        <input type="checkbox" id="sexohombre" name="sexo" value="sexohombre">
+        <label for="sexohombre">Hombre</label><br><br>
+
+        <!-- Fecha -->
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha"><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

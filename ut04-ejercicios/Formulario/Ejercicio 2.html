@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario2</title>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form>
+        <!-- Control para indicar la fecha -->
+        <label for="fecha">Elija una fecha:</label>
+        <input type="date" id="fecha" name="fecha"><br><br>
+
+        <!-- Control para elegir ficheros -->
+        <label for="fichero">Elija un fichero:</label>
+        <input type="file" id="fichero" name="fichero"><br><br>
+
+        <!-- Radiobuttons de procesador -->
+        <p>Seleccione un procesador:</p>
+        <input type="radio" id="amd" name="procesador" value="procesadoramd">
+        <label for="amd">AMD</label><br>
+        <input type="radio" id="intel_i5" name="procesador" value="procesadorintel_i5">
+        <label for="intel_i5">Intel i5</label><br>
+        <input type="radio" id="intel_i7" name="procesador" value="procesadorintel_i7">
+        <label for="intel_i7">Intel i7</label><br><br>
+
+        <!-- Radiobuttons de asignatura -->
+        <p>Seleccione una asignatura:</p>
+        <input type="radio" id="matematicas" name="asignatura" value="asignaturamatematicas">
+        <label for="matematicas">Matemáticas</label><br>
+        <input type="radio" id="historia" name="asignatura" value="asignaturahistoria">
+        <label for="historia">Historia</label><br>
+        <input type="radio" id="geografia" name="asignatura" value="asignaturageografia">
+        <label for="geografia">Geografía</label><br>
+        <input type="radio" id="lengua" name="asignatura" value="asignaturalengua">
+        <label for="lengua">Lengua</label><br><br>
+
+        <!-- Cuadros de texto -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos"><br><br>
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion"><br><br>
+
+        <!-- Control para elegir color -->
+        <label for="color">Elija un color:</label>
+        <input type="color" id="color" name="color"><br><br>
+
+        <!-- Área de texto -->
+        <label for="texto">Utilice este cuadro para escribir:</label><br>
+        <textarea id="texto" name="texto" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Control para indicar la fecha -->
+        <label for="fecha2">Elija otra fecha:</label>
+        <input type="date" id="fecha2" name="fecha2"><br><br>
+
+        <!-- Lista desplegable -->
+        <label for="idioma">Idioma:</label>
+        <select id="idioma" name="idioma">
+            <option value="ingles">Inglés</option>
+            <option value="aleman">Alemán</option>
+            <option value="frances">Francés</option>
+        </select><br><br>
+
+        <!-- Control para indicar la hora -->
+        <label for="hora">Elija una hora:</label>
+        <input type="time" id="hora" name="hora"><br><br>
+
+        <!-- Control para elegir otro fichero -->
+        <label for="fichero2">Elija otro fichero:</label>
+        <input type="file" id="fichero2" name="fichero2"><br><br>
+
+        <!-- Checkboxes -->
+        <p>Seleccione su género:</p>
+        <input type="checkbox" id="mujer" name="sexo" value="sexomujer">
+        <label for="mujer">Mujer</label><br>
+        <input type="checkbox" id="hombre" name="sexo" value="sexohombre">
+        <label for="hombre">Hombre</label><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

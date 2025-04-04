@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario04</title>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form>
+        <!-- Radiobuttons para asignaturas -->
+        <p>Seleccione una asignatura:</p>
+        <input type="radio" id="lengua" name="asignatura" value="asignaturalengua">
+        <label for="lengua">Lengua</label><br>
+        <input type="radio" id="matematicas" name="asignatura" value="asignaturamatematicas">
+        <label for="matematicas">Matemáticas</label><br>
+        <input type="radio" id="historia" name="asignatura" value="asignaturahistoria">
+        <label for="historia">Historia</label><br>
+        <input type="radio" id="geografia" name="asignatura" value="asignaturageografia">
+        <label for="geografia">Geografía</label><br><br>
+
+        <!-- Checkboxes para editor -->
+        <p>Seleccione su editor preferido:</p>
+        <input type="checkbox" id="notepad" name="editor" value="editornotepad">
+        <label for="notepad">Notepad</label><br>
+        <input type="checkbox" id="emacs" name="editor" value="editoremacs">
+        <label for="emacs">Emacs</label><br>
+        <input type="checkbox" id="otro" name="editor" value="editorotro">
+        <label for="otro">Otro</label><br><br>
+
+        <!-- Área de texto -->
+        <label for="comentarios">Comentarios:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="5" cols="59">Escriba aquí, por favor</textarea><br><br>
+
+        <!-- Lista desplegable para procesador -->
+        <label for="procesador">Seleccione un procesador:</label>
+        <select id="procesador" name="procesador">
+            <option value="amd">AMD</option>
+            <option value="intel_i5">Intel i5</option>
+            <option value="intel_i7">Intel i7</option>
+        </select><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

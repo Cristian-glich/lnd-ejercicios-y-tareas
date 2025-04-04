@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form>
+        <!-- Selector de color -->
+        <label for="color">Elija un color:</label>
+        <input type="color" id="color" name="color"><br><br>
+
+        <!-- Cuadros de texto -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos"><br><br>
+        
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono"><br><br>
+        
+        <!-- Checkboxes -->
+        <p>Seleccione las asignaturas:</p>
+        <input type="checkbox" id="lengua" name="asignatura" value="asignaturalengua">
+        <label for="lengua">Lengua</label><br>
+        
+        <input type="checkbox" id="matematicas" name="asignatura" value="asignaturamatematicas">
+        <label for="matematicas">Matemáticas</label><br>
+        
+        <input type="checkbox" id="historia" name="asignatura" value="asignaturahistoria">
+        <label for="historia">Historia</label><br>
+        
+        <input type="checkbox" id="geografia" name="asignatura" value="asignaturageografia">
+        <label for="geografia">Geografía</label><br><br>
+
+        <!-- Selector de archivo -->
+        <label for="archivo">Seleccione un archivo:</label>
+        <input type="file" id="archivo" name="archivo"><br><br>
+
+        <!-- Área de texto -->
+        <label for="comentarios">Comentarios:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="57">Utilice este cuadro para escribir</textarea><br><br>
+
+        <!-- Radiobuttons -->
+        <p>Seleccione un formato:</p>
+        <input type="radio" id="jpg" name="formato" value="formatojpg">
+        <label for="jpg">JPG</label><br>
+        
+        <input type="radio" id="png" name="formato" value="formatopng">
+        <label for="png">PNG</label><br><br>
+
+        <!-- Fecha -->
+        <label for="fecha">Seleccione una fecha:</label>
+        <input type="date" id="fecha" name="fecha"><br><br>
+        
+        <!-- Lista desplegable múltiple -->
+        <label for="conector">Seleccione conectores:</label>
+        <select id="conector" name="conector" multiple>
+            <option value="usb">USB</option>
+            <option value="paralelo">Paralelo</option>
+            <option value="ps2">PS2</option>
+        </select><br><br>
+        
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

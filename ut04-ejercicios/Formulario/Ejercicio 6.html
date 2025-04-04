@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form>
+        <!-- Control de Fecha -->
+        <label for="fecha">Elija una fecha:</label>
+        <input type="date" id="fecha" name="fecha"><br><br>
+
+        <!-- Control de Hora -->
+        <label for="hora">Elija una hora:</label>
+        <input type="time" id="hora" name="hora"><br><br>
+
+        <!-- Control para Elegir Ficheros -->
+        <label for="archivo">Elija un fichero:</label>
+        <input type="file" id="archivo" name="archivo"><br><br>
+
+        <!-- Lista Desplegable -->
+        <label for="lenguaje">Seleccione un lenguaje:</label>
+        <select id="lenguaje" name="lenguaje">
+            <option value="python">Python</option>
+            <option value="html">HTML</option>
+            <option value="visual_basic">Visual Basic</option>
+            <option value="java">Java</option>
+        </select><br><br>
+
+        <!-- Control para Elegir el Color -->
+        <label for="color">Elija un color:</label>
+        <input type="color" id="color" name="color"><br><br>
+
+        <!-- Checkboxes -->
+        <p>Seleccione opciones de hardware:</p>
+        <input type="checkbox" id="monitor_led" name="hardware" value="hardwaremonitor_led">
+        <label for="monitor_led">Monitor LED</label><br>
+        <input type="checkbox" id="hdd" name="hardware" value="hardwarehdd">
+        <label for="hdd">HDD</label><br>
+        <input type="checkbox" id="ssd" name="hardware" value="hardwaressd">
+        <label for="ssd">SSD</label><br><br>
+
+        <!-- Área de Texto -->
+        <label for="texto">Inserte aquí el texto:</label><br>
+        <textarea id="texto" name="texto" rows="5" cols="48">Inserte aquí el texto</textarea><br><br>
+
+        <!-- Cuadros de Texto -->
+        <label for="instituto">Instituto:</label>
+        <input type="text" id="instituto" name="instituto"><br><br>
+
+        <label for="estudios_elegidos">Estudios Elegidos:</label>
+        <input type="text" id="estudios_elegidos" name="estudios_elegidos"><br><br>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <!-- Botones de Opción -->
+        <p>Seleccione un conector:</p>
+        <input type="radio" id="usb" name="conector" value="conectorusb">
+        <label for="usb">USB</label><br>
+        <input type="radio" id="paralelo" name="conector" value="conectorparalelo">
+        <label for="paralelo">Paralelo</label><br>
+        <input type="radio" id="ps2" name="conector" value="conectorps2">
+        <label for="ps2">PS2</label><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
