@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño de la Página con Semántica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, main, section, article, aside, footer {
+            border: 1px solid #000000;
+            padding: 5px 10px;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+        main {
+            padding: 20px;
+        }
+        .imagen-principal {
+            width: 100%;
+            height: 300px;
+            background-color: #ccc;
+            margin-bottom: 20px;
+        }
+        article {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        article .imagen {
+            width: 200px;
+            height: 150px;
+            background-color: #ccc;
+        }
+        article .texto {
+            flex: 1;
+        }
+        article .texto h2 {
+            margin: 0 0 10px 0;
+        }
+        article .texto p {
+            margin: 0 0 10px 0;
+        }
+        article .texto .boton-info {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+        }
+        aside {
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+        footer section {
+            flex: 1;
+        }
+        footer section h3 {
+            margin-top: 0;
+        }
+        footer section .imagen {
+            width: 100px;
+            height: 100px;
+            background-color: #999;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo"></div>
+        <nav>
+            <a href="#">Sobre nosotros</a>
+            <a href="#">Blog</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+    <nav>
+        <a href="#">Categoría 1</a>
+        <a href="#">Categoría 2</a>
+        <a href="#">Categoría 3</a>
+        <a href="#">Categoría 4</a>
+    </nav>
+    <main>
+        <section class="imagen-principal"></section>
+        <article>
+            <div class="imagen"></div>
+            <div class="texto">
+                <h2>Lorem Ipsum Dolor Sit Amet</h2>
+                <p>Texto descriptivo aquí.</p>
+                <a href="#" class="boton-info">+ info</a>
+            </div>
+        </article>
+        <article>
+            <div class="imagen"></div>
+            <div class="texto">
+                <h2>Lorem Ipsum Dolor Sit Amet</h2>
+                <p>Texto descriptivo aquí.</p>
+                <a href="#" class="boton-info">+ info</a>
+            </div>
+        </article>
+    </main>
+    <aside>
+        <p>Personas que conectan con personas.</p>
+    </aside>
+    <footer>
+        <section>
+            <h3>Sabías que...</h3>
+            <p>Texto informativo aquí.</p>
+            <div class="imagen"></div>
+        </section>
+        <section>
+            <h3>Contacto</h3>
+            <p>Dirección: Ejemplo, 123<br>Teléfono: +34 123 456 789<br>Horario: 9:00 - 18:00</p>
+            <div class="imagen"></div>
+        </section>
+    </footer>
+</body>
+</html>

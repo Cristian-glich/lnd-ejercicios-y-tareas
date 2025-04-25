@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Error: El atributo charset estaba incorrecto. Se corrigió de "utf8" a "utf-8". -->
+    <meta charset="utf-8">
+    <title>Corrige los errores</title>
+</head>
+<body>
+
+    <!-- Error: La estructura de las listas estaba mal anidada. Se corrigió la anidación del <ul> interno dentro de un <li>. -->
+    <h1><strong>Corrige los errores</strong></h1>
+    
+    <h2>Índice de contenidos</h2>
+    <ul>
+        <li><a href="#ancla">Enlace 1</a>
+            <ul>
+                <li><a href="#">Enlace 2</a></li>
+                <!-- Error: Enlaces vacíos. Se reemplazó el atributo href vacío con "#" como valor válido. -->
+                <li><a href="#">Enlace 3</a></li>
+            </ul>
+        </li>
+        <!-- Error: Etiqueta <a> vacía. Se agregó texto visible en el enlace. -->
+        <li><a href="#">Enlace 4</a></li>
+    </ul>
+
+    <!-- Error: Etiqueta <h2> usada incorrectamente al incluir un <p>. Se separaron las etiquetas. -->
+    <h2>Lorem ipsum dolor sit amet</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem at nostrum iure vitae veritatis officiis officia nam aperiam consequatur, dolor in unde beatae labore quibusdam, nihil assumenda eligendi sint!<br><br>
+    Maiores.</p>
+
+    <!-- Error: El atributo id incluía "#", lo cual no es válido. Se corrigió a "ancla". -->
+    <p id="ancla">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex mollitia quia, corporis dicta, eaque itaque.</p>
+
+</body>
+</html>
