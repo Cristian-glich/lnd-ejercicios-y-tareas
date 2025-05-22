@@ -1,0 +1,30 @@
+/* Estado normal (enlace no visitado) */
+a:link {
+  color: red;
+  text-decoration: none;
+}
+
+/* Enlace que ya ha sido visitado */
+a:visited {
+  color: darkgreen; /* verde oscuro */
+  text-decoration: none;
+}
+
+/* Cuando se sitúa el cursor sobre el enlace */
+a:hover {
+  color: white;
+  background-color: red;
+  text-decoration: underline;
+}
+
+/* Enlace activo (por ejemplo, al hacer clic) */
+a:active {
+  color: orange;
+  text-decoration: none;
+}
+
+/* Cuando el enlace tiene el foco del teclado */
+a:focus {
+  color: blue;
+  text-decoration: underline;
+}

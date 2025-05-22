@@ -1,0 +1,52 @@
+table {
+  border: 2px solid blue;
+  border-collapse: collapse;
+}
+
+td {
+  border: 2px solid black;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.teal {
+  color: teal;
+  background-color: green;
+}
+
+.red {
+  color: red;
+  background-color: blue;
+}
+
+.blue {
+  color: blue;
+  background-color: red;
+}
+
+.orange {
+  color: orange;
+  background-color: green;
+}
+
+.purple {
+  color: purple;
+  background-color: blue;
+}
+
+.olive {
+  color: olive;
+  background-color: blue;
+}
+
+.fuchsia {
+  color: fuchsia;
+  background-color: blue;
+}
+
+.green {
+  color: green;
+  background-color: green;
+}

@@ -1,0 +1,37 @@
+/* Aseguramos que la tabla ocupe el espacio deseado y fusionamos bordes */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Alternamos el color de fondo de las filas */
+table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #e0e0e0;
+}
+
+/* Cambiamos el color de fondo de la fila al pasar el ratón */
+table tbody tr:hover {
+  background-color: #ddd;
+}
+
+/* Estilizamos el encabezado: fondo oscuro y texto blanco */
+table thead th {
+  background-color: #333;
+  color: white;
+  padding: 8px;
+}
+
+/* Agregamos un padding a las celdas del cuerpo de la tabla */
+table tbody td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+/* La primera columna en negrita */
+table tbody tr td:first-child {
+  font-weight: bold;
+}
